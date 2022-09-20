@@ -6,7 +6,6 @@ export function Layout(){
       {/* <Link to="/">HOME</Link> */}
       <Link to="/counter">COUNTER</Link>
       <Link to="/modal">MODAL</Link>
-      {/* <Link to="/file">FILE</Link> */}
     </header>
     
     <main>

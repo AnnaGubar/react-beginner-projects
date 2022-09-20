@@ -5,7 +5,7 @@ export function CounterPage() {
 const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="CounterPage">
       <div>
         <h2>Счетчик:</h2>
         <h1>{count}</h1>
