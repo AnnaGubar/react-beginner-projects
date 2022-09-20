@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+}
+
+.link {
+  display: inline-block;
+  font-weight: 500;
+  color: #116d70;
+}
+
+.activeLink {
+  @extend .link;
+  font-size: 20px;
+  text-decoration:underline;
+  color: #9d8487;
+}
+
+.header ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link:nth-last-of-type(n) {
+  margin-right: 10px;
+}

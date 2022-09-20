@@ -1,18 +1,44 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import { Container } from "./Container";
+import "../styles/loyaout.scss";
 
-export function Layout(){
-  return(<>
-    <header>
-      {/* <Link to="/">HOME</Link> */}
-      <Link to="/counter">COUNTER</Link>
-      <Link to="/modal">MODAL</Link>
-    </header>
-    
-    <main>
-      <Outlet/>
-    </main>
+export function Layout() {
+  return (
+    <>
+      <Container>
+        <header className="header">
+          <ul>
+            {/* <NavLink to="/">HOME</NavLink> */}
 
-    <footer>Footer</footer>
+            <li className="link">
+              <NavLink
+                to="/counter"
+                className={({ isActive }) =>
+                  isActive ? ["activeLink"] : ["link"]
+                }
+              >
+                COUNTER
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/modal"
+                className={({ isActive }) =>
+                  isActive ? ["activeLink"] : ["link"]
+                }
+              >
+                MODAL
+              </NavLink>
+            </li>
+          </ul>
+        </header>
+
+        <main>
+          <Outlet />
+        </main>
+
+        {/* <footer>Footer</footer> */}
+      </Container>
     </>
-  )
+  );
 }
