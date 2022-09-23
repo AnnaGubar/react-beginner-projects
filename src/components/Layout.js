@@ -40,6 +40,16 @@ export function Layout() {
                 QUIZ
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/users-list"
+                className={({ isActive }) =>
+                  isActive ? ["activeLink"] : ["link"]
+                }
+              >
+                USERS-LIST
+              </NavLink>
+            </li>
           </ul>
         </header>
 
