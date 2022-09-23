@@ -50,6 +50,16 @@ export function Layout() {
                 USERS-LIST
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/currency-converter"
+                className={({ isActive }) =>
+                  isActive ? ["activeLink"] : ["link"]
+                }
+              >
+                CURRENCY-CONVERTER
+              </NavLink>
+            </li>
           </ul>
         </header>
 

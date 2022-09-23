@@ -6,6 +6,7 @@ import { ModalPage } from './pages/ModalPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { QuizPage } from './pages/QuizPage';
 import { UsersListPage } from './pages/UsersListPage';
+import { CurrencyConverterPage } from './pages/CurrencyConverterPage';
 // import './App.css';
 
 export function App() {
@@ -19,6 +20,7 @@ export function App() {
           <Route path='modal' element={<ModalPage/>}/>
           <Route path='quiz' element={<QuizPage/>}/>
           <Route path='users-list' element={<UsersListPage/>}/>
+          <Route path='currency-converter' element={<CurrencyConverterPage/>}/>
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>

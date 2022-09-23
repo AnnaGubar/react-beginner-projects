@@ -91,7 +91,8 @@ function Result({ correctAnswer }) {
         You guessed {correctAnswer} answers out of {questions.length}
       </h2>
       {/* перезагрузка страницы при клике на кнопку */}
-      <a href="/react-beginner-projects/quiz">
+      {/* <a href="/react-beginner-projects/quiz"> */}
+      <a href="https://annagubar.github.io/react-beginner-projects/quiz">
         <button>Try again</button>
       </a>
     </div>
