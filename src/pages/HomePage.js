@@ -1,3 +1,5 @@
+import '../styles/home.scss'
+
 export function HomePage() {
-  return <div>Click any link above</div>;
+  return <section className='home'>⚜ Click any link above ⚜</section>;
 }

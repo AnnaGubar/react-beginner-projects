@@ -19,9 +19,10 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
+  align-items: center;
   list-style: none;
 }
 
-.link:nth-last-of-type(n) {
+ul li:not(:last-child){
   margin-right: 10px;
 }

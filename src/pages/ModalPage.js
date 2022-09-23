@@ -36,7 +36,7 @@ export function ModalPage() {
 
   return (
     <div className="ModalPage">
-      <button onClick={()=>setOpen(true)} className="open-modal-btn">✨ Открыть окно</button>
+      <button onClick={()=>setOpen(true)} className="open-modal-btn">✨ Open modal</button>
       <Modal open={open} setOpen={setOpen}>
         <img src="https://media2.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt=""/>
         <h3>Modal is open</h3>

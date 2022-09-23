@@ -30,6 +30,16 @@ export function Layout() {
                 MODAL
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/quiz"
+                className={({ isActive }) =>
+                  isActive ? ["activeLink"] : ["link"]
+                }
+              >
+                QUIZ
+              </NavLink>
+            </li>
           </ul>
         </header>
 

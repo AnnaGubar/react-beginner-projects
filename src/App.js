@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage';
 import { CounterPage } from './pages/CounterPage';
 import { ModalPage } from './pages/ModalPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { QuizPage } from './pages/QuizPage';
 // import './App.css';
 
 export function App() {
@@ -15,6 +16,7 @@ export function App() {
           <Route index element={<HomePage/>}/>
           <Route path='counter' element={<CounterPage/>}/>
           <Route path='modal' element={<ModalPage/>}/>
+          <Route path='quiz' element={<QuizPage/>}/>
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>
