@@ -7,10 +7,7 @@ export const Success = ({ amount }) => {
       <h3>Success!</h3>
       <p>An invitation has been sent to all {amount} users.</p>
 
-      <a href="https://annagubar.github.io/react-beginner-projects/users-list">
-      <button className="send-invite-btn">Back</button>
-      </a>
-      {/* <button onClick={()=>window.location.reload()} className="send-invite-btn">Back</button> */}
+      <button onClick={()=>window.location.reload()} className="send-invite-btn">Back</button>
     </div>
   );
 };
