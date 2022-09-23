@@ -90,9 +90,10 @@ function Result({ correctAnswer }) {
       <h2>
         You guessed {correctAnswer} answers out of {questions.length}
       </h2>
-      
+
       {/* перезагрузка страницы при клике на кнопку */}
-      <a href="quiz">
+      <a href="https://annagubar.github.io/react-beginner-projects/users-list">
+      {/* <a href="quiz"> */}
       {/* <a href="/react-beginner-projects/quiz"> */}
         <button>Try again</button>
       </a>
