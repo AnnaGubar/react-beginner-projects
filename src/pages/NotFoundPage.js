@@ -1,3 +1,9 @@
+import { Container } from "../components/Container";
+
 export function NotFoundPage() {
-  return <div>NotFoundPage</div>;
+  return (
+    <Container>
+      <div>NotFoundPage</div>
+    </Container>
+  );
 }

@@ -22,12 +22,32 @@ export function Layout() {
             </li>
             <li>
               <NavLink
+                to="/users-list"
+                className={({ isActive }) =>
+                  isActive ? ["activeLink"] : ["link"]
+                }
+              >
+                USERS-LIST
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/modal"
                 className={({ isActive }) =>
                   isActive ? ["activeLink"] : ["link"]
                 }
               >
                 MODAL
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/currency-converter"
+                className={({ isActive }) =>
+                  isActive ? ["activeLink"] : ["link"]
+                }
+              >
+                CURRENCY-CONVERTER
               </NavLink>
             </li>
             <li>
@@ -40,24 +60,15 @@ export function Layout() {
                 QUIZ
               </NavLink>
             </li>
+
             <li>
               <NavLink
-                to="/users-list"
+                to="/photo-search"
                 className={({ isActive }) =>
                   isActive ? ["activeLink"] : ["link"]
                 }
               >
-                USERS-LIST
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/currency-converter"
-                className={({ isActive }) =>
-                  isActive ? ["activeLink"] : ["link"]
-                }
-              >
-                CURRENCY-CONVERTER
+                PHOTO-SEARCH
               </NavLink>
             </li>
           </ul>
