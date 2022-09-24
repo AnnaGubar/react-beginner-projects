@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { Container } from "../components/Container";
 import "../styles/quiz.scss";
 
@@ -81,7 +82,7 @@ function Game({ step, question, onClickVariant }) {
 }
 
 function Result({ correctAnswer }) {
-
+  const navigate = useNavigate();
 
   return (
     <div className="result">
@@ -96,7 +97,7 @@ function Result({ correctAnswer }) {
       {/* перезагрузка страницы при клике на кнопку */}
 
       {/* <a href="quiz"> */}
-      <button onClick={()=>window.location.reload()}>Try again</button>
+      <button onClick={()=>navigate('/')}>Try again</button>
       {/* </a> */}
     </div>
   );
