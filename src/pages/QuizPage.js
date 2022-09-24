@@ -94,8 +94,7 @@ function Result({ correctAnswer }) {
       {/* перезагрузка страницы при клике на кнопку */}
 
       {/* <a href="quiz"> */}
-      {/* <a href="/react-beginner-projects/quiz"> */}
-        <button>Try again</button>
+      <button onClick={()=>window.location.reload()}>Try again</button>
       {/* </a> */}
     </div>
   );

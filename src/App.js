@@ -22,6 +22,7 @@ export function App() {
           <Route path='users-list' element={<UsersListPage/>}/>
           <Route path='currency-converter' element={<CurrencyConverterPage/>}/>
 
+          <Route path="/reload" render= {(props)=>window.location.reload()} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
