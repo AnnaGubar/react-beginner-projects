@@ -20,9 +20,9 @@ export function App() {
           <Route path='modal' element={<ModalPage/>}/>
           <Route path='quiz' element={<QuizPage/>}/>
           <Route path='users-list' element={<UsersListPage/>}/>
+          {/* <Route path="users-list/reload" element={<NotFoundPage />}/> */}
           <Route path='currency-converter' element={<CurrencyConverterPage/>}/>
 
-          <Route path="/reload" element={<QuizPage/>} key="reload"/>
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

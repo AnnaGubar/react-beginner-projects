@@ -81,6 +81,8 @@ function Game({ step, question, onClickVariant }) {
 }
 
 function Result({ correctAnswer }) {
+
+
   return (
     <div className="result">
       <img
