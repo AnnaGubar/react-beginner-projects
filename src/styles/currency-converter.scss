@@ -1,24 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
-// body {
-//   background-color: #f9f2ed;
-// }
-
-// * {
-//   font-family: 'Inter', system-ui !important;
-//   box-sizing: border-box;
-//   user-select: none;
-// }
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 .CurrencyConverterPage {
-  // font-family: 'Inter', system-ui !important;
-  // box-sizing: border-box;
-  // user-select: none;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
-  width: 800px;
+  min-width: 500px;
   margin: 100px auto;
   background-color: #fff;
   padding: 30px;
@@ -27,6 +13,7 @@
 }
 
 .block {
+  min-width: 200px;
   input {
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 3rem;
@@ -40,7 +27,7 @@
   }
 }
 
-.currencies {
+.block .currencies {
   display: flex;
   list-style: none;
   padding: 0;
@@ -50,6 +37,8 @@
   overflow: hidden;
 
   li {
+    min-width: 30px;
+    margin-right: 0;
     display: inline-flex;
     padding: 10px 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
@@ -73,11 +62,14 @@
     &:last-of-type {
       display: inline-flex;
       align-items: center;
+      margin-right: auto;
+      margin-left: auto;
       flex: 0 0 50px;
       border-right: 0;
+      padding: 0;
 
       svg {
-        width: 16px;
+        min-width: 16px;
         height: 16px;
       }
     }
