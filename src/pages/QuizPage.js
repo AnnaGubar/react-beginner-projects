@@ -92,11 +92,11 @@ function Result({ correctAnswer }) {
       </h2>
 
       {/* перезагрузка страницы при клике на кнопку */}
-      <a href="http://annagubar.github.io/react-beginner-projects/users-list">
+
       {/* <a href="quiz"> */}
       {/* <a href="/react-beginner-projects/quiz"> */}
         <button>Try again</button>
-      </a>
+      {/* </a> */}
     </div>
   );
 }
