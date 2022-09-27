@@ -28,9 +28,9 @@ export function CurrencyConverterPage() {
   const onChangeSelectedValue = (value) => {
     const sum = value / exchangeRateRef.current[selectedCurrency];
     const result = sum * exchangeRateRef.current[convertedCurrency];
-
-    setСonvertedValue(result.toFixed(3));
-    setSelectedValue(value);
+    
+    setСonvertedValue(result === value ? value : result.toFixed(3));
+    setSelectedValue(Number(value));
   };
 
   const onChangeСonvertedValue = (value) => {
@@ -38,8 +38,8 @@ export function CurrencyConverterPage() {
       (exchangeRateRef.current[selectedCurrency] / exchangeRateRef.current[convertedCurrency]) *
       value;
 
-    setSelectedValue(result.toFixed(3));
-    setСonvertedValue(value);
+    setSelectedValue(result === value ? value : result.toFixed(3));
+    setСonvertedValue(Number(value));
   };
 
   useEffect(() => {

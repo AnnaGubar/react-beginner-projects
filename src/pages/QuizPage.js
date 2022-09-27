@@ -1,3 +1,5 @@
+//* progressbar
+
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Container } from "../components/Container";
@@ -67,7 +69,10 @@ function Game({ step, question, onClickVariant }) {
   return (
     <>
       <div className="progress">
+
+        {/* progressbar */}
         <div style={{ width: `${percent}%` }} className="progress__inner"></div>
+
       </div>
       <h1>{question.title}</h1>
       <ul>

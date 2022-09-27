@@ -57,7 +57,7 @@ export function PhotoSearchPage() {
 
         <div className="content">
           {isLoading ? (
-            <h2>Loading... </h2>
+            <h2 className="loading">Loading... </h2>
           ) : (
             collection
               .filter(({ name }) =>
